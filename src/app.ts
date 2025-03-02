@@ -16,6 +16,7 @@ import { urlRouter } from './routes/urlRoutes';
  */
 export const createApp = (): Application => {
   const app: Application = express();
+  app.use(express.json());
 
   // Serve static files from the "public/home" directory
   app.use(express.static(path.join(__dirname, '..', 'public', 'home')));
