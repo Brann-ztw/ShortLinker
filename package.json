@@ -1,0 +1,38 @@
+{
+  "name": "shortlinker",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts"
+  },
+  "keywords": [
+    "url-shortener",
+    "shortener",
+    "url",
+    "link-shortener",
+    "nodejs",
+    "express",
+    "typescript",
+    "json",
+    "backend",
+    "web-development",
+    "api"],
+  "author": "Braan",
+  "license": "MIT",
+  "description": "ShortLinker es un acortador de URLs simple y eficiente construido con Node.js, Express y TypeScript. Permite acortar URLs, redirigir a la URL original y almacenar los enlaces en un archivo JSON.",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/validator": "^13.12.2",
+    "autoprefixer": "^10.4.20",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "axios": "^1.8.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "validator": "^13.12.0"
+  }
+}

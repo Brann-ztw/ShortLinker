@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acortador de URLs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Acortador de URLs</h1>
+      <p>Acorta tus enlaces de forma rápida y sencilla</p>
+    </header>
+
+    <form id="shorten-form">
+      <input
+        type="url"
+        id="url-input"
+        placeholder="Ingresa tu URL aquí"
+        required
+      />
+      <button type="submit" id="submit-button">
+        <span id="button-text">Acortar URL</span>
+        <span id="button-loader" class="hidden">Cargando...</span>
+      </button>
+    </form>
+
+    <div id="result" class="hidden">
+      <p>URL acortada: <a id="shortened-url" target="_blank" rel="noopener noreferrer"></a></p>
+      <button id="copy-button">Copiar</button>
+    </div>
+
+    <div id="error" class="hidden">
+      <p id="error-message"></p>
+    </div>
+
+    <div id="url-list">
+      <h2>URLs Acortadas</h2>
+      <ul id="urls"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
