@@ -2,7 +2,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 
 // Define the path to the JSON file
-const dataFilePath: string = path.join(__dirname, '..', 'data', 'urls.json');
+const dataFilePath: string = path.join(__dirname, '..', '..' ,'data', 'urls.json');
 
 /**
  * Reads and parses the JSON data from the file.
